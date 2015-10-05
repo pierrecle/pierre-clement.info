@@ -1,0 +1,59 @@
+extends layout
+
+block metadata
+    title Expérience et compétences - Pierre CLÉMENT
+    meta(name="description", content="Mon expérience professionnelle et mes compétences.")
+
+block content
+    h1
+        span Mon expérience et mes compétences
+    .col-sm-8
+        ul.timeline
+            - jobs.slice().reverse()
+            - var job = jobs[6]
+            +timelineElement(job.year, job.title, job.company, job.type, job.dates, job.location)
+                include partials/2014-AXA
+            - job = jobs[5]
+            +timelineElement(job.year, job.title, job.company, job.type, job.dates, job.location)
+                include partials/2013-recisio
+            - job = jobs[4]
+            +timelineElement(job.year, job.title, job.company, job.type, job.dates, job.location)
+                include partials/2012-merkutio
+            - job = jobs[3]
+            +timelineElement(job.year, job.title, job.company, job.type, job.dates, job.location)
+                include partials/2010-autoentrepreneur
+            - job = jobs[2]
+            +timelineElement(job.year, job.title, job.company, job.type, job.dates, job.location)
+                include partials/2009-doctorat
+            - job = jobs[1]
+            +timelineElement(job.year, job.title, job.company, job.type, job.dates, job.location)
+                include partials/2009-stage
+            - job = jobs[0]
+            +timelineElement(job.year, job.title, job.company, job.type, job.dates, job.location)
+                include partials/2006-stage
+        p
+            br
+            |Sans oublier mes petits jobs d'été. J'ai en effet "profité" de mon temps libre pour découvrir le métier de carreleur
+            | pendant deux étés et vendeur dans le tabac/presse familial pendant trois étés.
+    .col-sm-4
+        h2
+            i.fa.fa-code
+            |&nbsp;Web
+        .skills
+            each skill in skills.web
+                +skill(skill.percent, skill.name, skill.details)
+
+        h2
+            i.fa.fa-desktop
+            |&nbsp;Culture dev'
+        p.
+            Je me suis également intéressé et m'intéresse encore à d'autres technologies parfois éloignées du web
+        .skills
+            each skill in skills.culture
+                +skill(skill.percent, skill.name, skill.details)
+        h2
+            i.fa.fa-cogs
+            |&nbsp;Méthodologies
+        .skills
+            each skill in skills.methodologies
+                +skill(skill.percent, skill.name, skill.details)

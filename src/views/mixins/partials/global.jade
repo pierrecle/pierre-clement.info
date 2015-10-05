@@ -1,0 +1,51 @@
+//-
+   Main menu item link
+mixin menuLink(label, expectedFilename, link, icon)
+   li(class=(filename === expectedFilename ? "current" : ""))
+      a(href="#{link}") #{label}&nbsp;
+         i.fa(class="fa-#{icon}")
+      span.arrow
+//-
+   Timeline element main mixin
+mixin timelineElement(year, title, details, subDetails, date, location, content)
+   li
+      .timeline-badge
+         |#{year}
+      .timeline-panel
+         +timelineElementHeading(title, details, subDetails, date, location)
+         +timelineElementBody(content)
+            block
+//-
+   Submixin for element heading
+mixin timelineElementHeading(title, details, subDetails, date, location)
+   .timeline-heading
+      h2.unselectable-text
+         span #{title}&nbsp;
+            span.text-muted
+               i.fa.fa-chevron-circle-down
+               i.fa.fa-chevron-circle-up.hidden
+      if details
+         h3
+            span.subtext #{details}
+            if subDetails
+               span &nbsp;•&nbsp;
+               span.text-muted
+                  |#{subDetails}
+         if date
+         p
+            if date
+                small.text-muted
+                    i.fa.fa-clock-o
+                    |&nbsp;#{date}&nbsp;
+            if location
+               small.text-muted
+                  i.fa.fa-location-arrow
+                  |&nbsp;#{location}
+//-
+   Submixin for element body
+mixin timelineElementBody(content)
+   .timeline-body.hidden
+      if content
+         p
+            !=content
+      block

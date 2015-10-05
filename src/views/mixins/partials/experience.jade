@@ -1,0 +1,8 @@
+mixin skill(percent, competenceName, details)
+   div
+      .skill
+         span(style={width: percent+"%"}) #{competenceName}
+         | #{competenceName}
+      if details
+         p.text-muted
+            | ^ #{details}

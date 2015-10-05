@@ -1,0 +1,14 @@
+mixin formationProElement(date, abbreviation, name, details)
+   li
+      small.text-muted
+         i.fa.fa-clock-o
+            |&nbsp;#{date}
+      |&nbsp;•&nbsp;
+      if abbreviation
+         abbr(title=name) #{abbreviation}
+      else
+         =name
+      if details
+         span.text-muted
+            |&nbsp;•&nbsp;
+            =details

@@ -1,0 +1,38 @@
+{
+  "jobs": [
+    {"year": 2014, "title": "Développeur front-end", "company": "AXA", "type": "CDI", "dates": "Depuis juillet 2014", "location": "Marcq-en-Baroeul", "teaser": "Expertise Javascript, développement AngularJS."},
+    {"year": 2013, "title": "Développeur web", "company": "Recisio", "type": "CDI", "dates": "De février 2013 à juin 2014", "location": "Lille", "teaser": "Développeur principalement PHP sur les différents sites de l'entreprise."},
+    {"year": 2012, "title": "Développeur web", "company": "Merkutio", "type": "CDI", "dates": "De janvier 2012 à janvier 2013", "location": "Avignon", "teaser": "Développeur sur un framework interne, développement de jeux mobiles via Unity 3D."},
+    {"year": 2010, "title": "Auto-entrepreneur", "dates": "D'avril 2010 à juin 2012", "location": "Avignon", "teaser": "Petit artisan du web."},
+    {"year": 2009, "title": "Doctorant en informatique", "company": "CERI/LIA", "type": "Bourse ministérielle", "dates": "D'octobre 2009 à décembre 2011", "location": "Avignon", "teaser": "Sujet : segmentation en locuteurs des fichiers vidéos hétérogènes issus du web."},
+    {"year": 2009, "title": "Stagiaire en ingénierie de recherche", "company": "CERI/LIA", "dates": "De janvier à août 2009", "location": "Avignon", "teaser": "Mise en place d’un système de cartographie afin d'aider les cliniciens à suivre l'évolution de certaines pathologies rares."},
+    {"year": 2006, "title": "Stagiaire en développement web", "company": "INRIA", "dates": "D'avril à juin 2006", "location": "Nancy", "teaser": "Développement d'un site intranet afin de gérer les documents du système d'information de l'INRIA."}
+  ],
+  "skills": {
+    "web": [
+      {"name": "HTML", "percent": 100},
+      {"name": "Javascript", "percent": 100},
+      {"name": "AngularJS", "percent": 95},
+      {"name": "PHP & frameworks", "percent": 90},
+      {"name": "CSS/SCSS/LESS", "percent": 80},
+      {"name": "SQL", "percent": 50},
+      {"name": "Flash", "percent": 25, "details": "Uniquement sous la contrainte..."}
+    ],
+    "culture": [
+      {"name": "Admin. système", "percent": 60, "details": "Sous Linux et à titre personnel seulement."},
+      {"name": "Prog. système (Bash/Perl)", "percent": 65},
+      {"name": "Java", "percent": 60},
+      {"name": "Java EE", "percent": 15},
+      {"name": "C/C++", "percent": 60},
+      {"name": "Python", "percent": 25},
+      {"name": "Android", "percent": 15},
+      {"name": "iOS", "percent": 10}
+    ],
+    "methodologies": [
+      {"name": "TDD", "percent": 90},
+      {"name": "Clean Code", "percent": 80},
+      {"name": "Refactoring/Legacy", "percent": 70},
+      {"name": "BDD", "percent": 60}
+    ]
+  }
+}

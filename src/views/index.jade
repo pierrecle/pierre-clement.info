@@ -1,0 +1,42 @@
+extends layout
+
+block metadata
+    title Profil - Pierre CLÉMENT
+    meta(name="description", content="Mon profil en quelques lignes.")
+
+block content
+    h1
+        span Mon profil
+    .col-sm-4
+        div
+            h2 Informations personnelles
+            div.items
+                each infoPerso in infosPerso
+                    +infoPerso(infoPerso.label, infoPerso.icon, infoPerso.value)
+                +infoPerso("Site perso", "external-link")
+                    a(href="http://www.pierre-clement.com", title="Mon site perso") pierre-clement.com
+
+            h2 Langues parlées
+            .items
+                for langue in langues
+                    +language(langue.name, langue.level)
+    .col-sm-8
+        div
+            h2 En quelques mots...
+            p
+                |Je suis actuellement développeur front-end chez AXA, au Web Center de Lille.
+                br
+                |J'intervient principalement en temps qu'expert Javascript aussi bien sur les applications intranet qu'extranet.
+            h2 Ligne de conduite
+            p
+                each manifestEntry, index in manifest
+                    strong #{manifestEntry.title}&nbsp;:&nbsp;
+                    !=manifestEntry.details
+                    if index !== manifest.length - 1
+                        br
+            h2 Hobbies
+            p
+                each hobby, index in hobbies
+                    span= hobby
+                    if index !== hobbies.length - 1
+                        br

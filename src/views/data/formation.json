@@ -1,0 +1,19 @@
+{
+	"pro": [
+		{"year": 2015, "name": "Feedback", "by": "Par Octo Technology"},
+		{"year": 2015, "name": "Refactoring code legacy", "by": "Par Octo Technology"},
+		{"year": 2015, "name": "Clean Code", "by": "Par Octo Technology"},
+		{"year": 2015, "abbr": "BDD", "name": "Behavior Driven Development", "by": "Par Octo Technology"},
+		{"year": 2015, "abbr": "TDD", "name": "Test Driven Development", "by": "Par Octo Technology"},
+		{"year": 2012, "abbr": "SEO", "name": "Search Engine Optimisation", "by": "Formation interne par Merkutio"}
+	],
+	"school": [
+		{"year": 2011, "title": "Doctorat en Informatique", "years": "2011 - 2009", "quickDetails": "Non soutenu", "location": "Avignon", "school": "Centre d'Enseignement et de Recherche en Informatique, Université d'Avignon"},
+		{"year": 2009, "title": "Master informatique Génie Logiciel", "years": "2009 - 2008", "quickDetails": "Mention bien", "location": "Avignon", "school": "Centre d'Enseignement et de Recherche en Informatique, Université d'Avignon"},
+		{"year": 2008, "title": "Bachelor Honours Of Science In Computing in Internet Technologies", "years": "2008 - 2007", "quickDetails": "Mention assez-bien", "location": "Dundalk (Irlande)", "school": "Dundalk Institute Of Technologies"},
+		{"year": 2008, "title": "Maîtrise informatique Génie Logiciel", "years": "2009 - 2008", "quickDetails": "Obtenue par équivalence", "location": "Avignon", "school": "Centre d'Enseignement et de Recherche en Informatique, Université d'Avignon"},
+		{"year": 2007, "title": "Licence Informatique Génie Logiciel", "years": "2007 - 2006", "location": "Avignon", "school": "Centre d'Enseignement et de Recherche en Informatique, Université d'Avignon"},
+		{"year": 2006, "title": "Diplôme Universitaire de Technologie Informatique", "years": "2006 - 2004", "location": "Nancy", "school": "Institut Universitaire de Technologie de Nancy-Charlemagne, Université Nancy II"},
+		{"year": 2004, "title": "Baccalauréat Scientifique", "location": "Saint-Dizier", "school": "Spécialité sciences de l'ingénieur, option mathématiques - Lycée Blaise Pascal"}
+	]
+}

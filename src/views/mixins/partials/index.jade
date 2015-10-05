@@ -1,0 +1,14 @@
+mixin infoPerso(title, icon, value)
+    .item
+        span.title #{title}
+            i.fa(class="fa-#{icon}")
+        span.value
+            if block
+                block
+            else if value
+                 !=value
+
+mixin language(title, value)
+    .item
+        span.title #{title}
+        span.value #{value}

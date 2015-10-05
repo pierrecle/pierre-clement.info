@@ -1,0 +1,26 @@
+{
+  "infosPerso": [
+    {"label": "Je suis", "value": "Pierre CLÉMENT", "icon": "user"},
+    {"label": "Né le", "value": "1er juin 1987", "icon": "calendar"},
+    {"label": "J'habite à", "value": "Marcq-en-Baroeul", "icon": "location-arrow"},
+    {"label": "Et je suis", "value": "Marié", "icon": "gavel"}
+  ],
+  "langues": [
+    {"name": "Anglais", "level": "Bon niveau"},
+    {"name": "Allemand", "level": "Notions"},
+    {"name": "Espagnol", "level": "Notions"}
+  ],
+  "manifest": [
+    {"title": "Penser utilisateur", "details": "une mauvaise expérience utilisateur n'amène que des frustrations..."},
+    {"title": "Maîtriser les bases", "details": "utiliser des frameworks sans connaître la techno de base, rien de tel pour ne pas avancer et faire toute de travers !"},
+    {"title": "Faire simple", "details": "le plus dur c'est de faire simple, pour le dev comme pour l'utilisateur."},
+    {"title": "Continuer la veille", "details": "toujours rester à l'écoute, de bonnes idées émergent tous les jours."},
+    {"title": "Être créatif", "details": "mais savoir calmer ses hardeurs et rester sobre quand il le faut, pour ne perdre ses utilisateurs..."}
+  ],
+  "hobbies": [
+      "Depuis plusieurs années, j'essaie de consacrer mon temps libre à la photographie. Mais dans les faits, je suis plus derrière un clavier que derrière un objectif...",
+      "Sinon, quand j'avais un peu plus de temps, j'aimais bien faire du sport (rugby à 13, haltérophilie, sports de combat etc.).",
+      "J'aime avoir des responsabilités (j'étais, entre autres, représentant des doctorants aux conseils scientifiques et pédagogiques du CERI/LIA à Avignon).",
+      "Enfin, j'apprécie le partage de connaissance et d'expérience, informatique et photographique autour d'un café ou de blogs. J'essaie de faire assez régulièrement des présentations internes autour du partage de veille et autres pratiques ou pattern de développement. Les cours que j'ai donné à l'Université d'Avignon pendant ma thèse font également parti de mes meilleurs souvenirs concernant le partage."
+  ]
+}

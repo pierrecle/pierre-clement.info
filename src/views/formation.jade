@@ -1,0 +1,21 @@
+extends layout
+
+block metadata
+    title Formation - Pierre CLÉMENT
+    meta(name="description", content="Ma formation scolaire et professionnelle.")
+
+block content
+    h1
+        span
+            | Ma formation
+    .col-sm-offset-1.col-sm-10
+        h2 Professionnelle
+        ul.no-bullet
+            each proElement in pro
+                +formationProElement(proElement.year, proElement.abbr, proElement.name, proElement.by)
+
+        h2 Scolaire
+        ul.timeline
+            each schoolElement in school
+                +timelineElement(schoolElement.year, schoolElement.title, schoolElement.years, schoolElement.quickDetails, null, schoolElement.location, schoolElement.school)
+            

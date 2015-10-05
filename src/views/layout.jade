@@ -1,0 +1,46 @@
+include mixins/mixins
+doctype html
+html
+    head
+        block metadata
+            title Pierre CLÉMENT
+            meta(name="description", content="Ingénieur front-end, mon curriculum vitae, mon profil, mes compétences.")
+
+        meta(http-equiv="content-type", content="text/html; charset=utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
+        link(rel="shortcut icon", type="image/png", href="favicon.png")
+        link(rel="apple-touch-icon-precomposed", href="apple-touch-icon.png")
+
+        link(href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css", rel="stylesheet" type="text/css")
+        link(href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css", rel="stylesheet" type="text/css")
+        link(href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css", rel="stylesheet" type="text/css")
+        link(href="style/main.css", rel="stylesheet" type="text/css")
+
+    body
+        #sidebar
+            header#me
+                img(src="http://www.gravatar.com/avatar/db37391857a3ea44064d651c0377faa7.jpg?size=200", alt="Pierre CLÉMENT")
+                span Pierre CLÉMENT
+                span Ingénieur front-end
+            nav
+                ul
+                    +menuLink("Profil", "index", "/", "user")
+                    +menuLink("Expérience", "experience", "./experience.html", "suitcase")
+                    +menuLink("Formation", "formation", "./formation.html", "graduation-cap")
+                    +menuLink("Télécharger", "", "/goodies/Pierre-CLEMENT-CV.pdf", "file-pdf-o")
+
+            #socials
+                a(href="http://fr.linkedin.com/pub/pierre-cl%C3%A9ment/41/833/92/", title="Mon profil sur LinkedIn")
+                    i.fa.fa-linkedin
+                a(href="https://github.com/pierrecle", title="Ma page Github")
+                    i.fa.fa-github
+
+            footer
+                - var curYear = (new Date()).getFullYear()
+                |2009-#{curYear} &copy P .CLÉMENT
+        #content.container-fluid
+            span#toggle-sidebar
+                i.fa.fa-bars
+            div
+                block content
+        script(src="scripts/main.js")
