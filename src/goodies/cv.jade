@@ -32,149 +32,157 @@ mixin skillItem(skill)
 doctype html
 html
     head
-        style
-            :less
-                h1,h2 {
-                    color: #006699;
-                    margin-top: 0;
-                }
-                body, table, tr, td {
-                    color: #222;
-                    font-family: sans-serif;
-                    font-weight: lighter;
-                    font-size: 7.6pt;
-                    line-height: 9.6pt;
-                    padding: 0; margin: 0;
-                }
-                table, tr, td {
-                    vertical-align: top;
-                    border-collapse: collapse;
-                }
-                b {
-                    font-weight: bold;
-                }
-                a {
-                    text-decoration: none;
-                    color: #006699;
-                }
-                td {
-                    &.width-40 {
-                        width: 40%;
-                    }
-                    &.width-50 {
-                        width: 50%;
-                    }
-                    &.width-60 {
-                        width: 60%;
-                    }
-                }
-                header {
-                    height: 10.5em;
+      style
+          :less
+              h1,h2 {
+                  color: #006699;
+                  margin-top: 0;
+              }
+              html {
+                background-color: #F9F9F9;
+                height: 100%;
+              }
+              body, table, tr, td {
+                  color: #222;
+                  font-family: Verdana, Geneva, sans-serif;
+                  font-weight: lighter;
+                  font-size: 7.1pt;
+                  line-height: 9pt;
+                  padding: 0; margin: 0;
+              }
+              table, tr, td {
+                  vertical-align: top;
+                  border-collapse: collapse;
+              }
+              b {
+                  font-weight: bold;
+              }
+              a {
+                  text-decoration: none;
+                  color: #006699;
+              }
+              td {
+                  &.width-40 {
+                      width: 40%;
+                  }
+                  &.width-50 {
+                      width: 50%;
+                  }
+                  &.width-60 {
+                      width: 60%;
+                  }
+              }
+              header {
+                  height: 11.5em;
+                  background-color: #FFF;
+                  > img {
+                    height: 11.5em;
+                  }
+                  > div {
+                      display: inline-block;
+                      padding: 10pt;
+                      vertical-align: top;
+                      margin-top: 1em;
+                  }
+                  > a  {
+                    display: block;
+                    position: absolute;
+                    right: 0em;
+                    top: 4em;
+                    
                     img {
-                        &:first-child {
-                            height: 10.5em;
-                        }
-                        &:last-child {
-                            width: 7.5em;
-                            position: absolute;
-                            right: 0em;
-                            top: 3em;
-                        }
+                      width: 7.5em;
                     }
-                    > div {
-                        display: inline-block;
-                        padding: 10pt;
-                        vertical-align: top;
-                    }
-                }
-                #content {
-                    table {
-                        width: 100%;
-                        border-style: solid;
-                        border-color: #F9F9F9;
-                        border-left-width: 10pt;
-                        border-right-width: 10pt;
-                        border-top-width: 5pt;
-                        border-botom-width: 5pt;
-                        
-                        &:first-child {
-                            border-top-width: 10pt;
-                        }
-                        &:last-child {
-                            border-bottom-width: 10pt;
-                        }
-                        
-                        td {
-                            background-color: #fff;
-                            padding: 5pt;
-                            
-                            &:first-child {
-                                border-right: 10pt solid #F9F9F9;
-                            }
-                            &:last-child {
-                                border-left: 10pt solid #F9F9F9;
-                            }
-                        }
-                    }
-                }
-                .date{
-                    font-size: 0.9em;
-                    font-style: italic;
-                    color: #666;
-                }
-                span.bullet:after {
-                    color: #999;
-                    content: "\00A0\2022\00A0";
-                }
-                .experience-item, .school-item {
-                    margin-bottom: 0.7em;
-                    &:last-child {
-                        margin-bottom: 0;
-                    }
-                    h3 {
-                        margin: 0;
-                    }
-                }
-                h3 span.company, .school-item .quick-details {
-                    font-weight: 200;
-                    color: #006699;
-                }
-                h3 span.location, .school-item .location {
-                    font-weight: 200;
-                    color: #666;
-                }
-                .experience-item .teaser {
-                    color: #333;
-                }
-                .skill {   
-                    > div {
-                        display: inline-block;
-                    }
-                    .percent {
-                        width: 10em;
-                        height: 1em;
-                        float:right;
-                        position: relative;
-                        
-                        div {
-                            height: 100%;
-                            position: absolute;
-                            left: 0;
-                            
-                            &:first-child {
-                                width: 100%;
-                                background-color: #F1F1F1;
-                            }
-                            &:last-child {
-                                background-color: #444;
-                            }
-                        }
-                    }
-                }
-                .hobbies {
-                    text-align: justify;
-                    margin-bottom: 0;
-                }
+                  }
+              }
+              #content {
+                  table {
+                      width: 100%;
+                      border-style: solid;
+                      border-color: #F9F9F9;
+                      border-left-width: 10pt;
+                      border-right-width: 10pt;
+                      border-top-width: 5pt;
+                      border-botom-width: 5pt;
+                      
+                      &:first-child {
+                          border-top-width: 10pt;
+                      }
+                      &:last-child {
+                          border-bottom-width: 10pt;
+                      }
+                      
+                      td {
+                          background-color: #fff;
+                          padding: 5pt;
+                          
+                          &:first-child {
+                              border-right: 10pt solid #F9F9F9;
+                          }
+                          &:last-child {
+                              border-left: 10pt solid #F9F9F9;
+                          }
+                      }
+                  }
+              }
+              .date{
+                  font-size: 0.9em;
+                  font-style: italic;
+                  color: #666;
+              }
+              span.bullet:after {
+                  color: #999;
+                  content: "\00A0\2022\00A0";
+              }
+              .experience-item, .school-item {
+                  margin-bottom: 0.7em;
+                  &:last-child {
+                      margin-bottom: 0;
+                  }
+                  h3 {
+                      margin: 0;
+                  }
+              }
+              h3 span.company, .school-item .quick-details {
+                  font-weight: 200;
+                  color: #006699;
+              }
+              h3 span.location, .school-item .location {
+                  font-weight: 200;
+                  color: #666;
+              }
+              .experience-item .teaser {
+                  color: #333;
+              }
+              .skill {   
+                  > div {
+                      display: inline-block;
+                  }
+                  .percent {
+                      width: 10em;
+                      height: 1em;
+                      float:right;
+                      position: relative;
+                      
+                      div {
+                          height: 100%;
+                          position: absolute;
+                          left: 0;
+                          
+                          &:first-child {
+                              width: 100%;
+                              background-color: #F1F1F1;
+                          }
+                          &:last-child {
+                              background-color: #444;
+                          }
+                      }
+                  }
+              }
+              .hobbies {
+                  text-align: justify;
+                  margin-bottom: 0;
+              }
     body
         header
             img(src="http://www.gravatar.com/avatar/db37391857a3ea44064d651c0377faa7.jpg?size=150", alt="Pierre CLÉMENT")
@@ -185,10 +193,12 @@ html
                     br
                     span 06 45 34 29 12
                     br
-                    span Github: pierrecle
+                    span Github: 
+                      a(href="https://github.com/pierrecle") pierrecle
                     br
-                    span www.pierre-clement.info
-            img(src="http://www.unitag.io/qreator/generate?crs=e2ZRfLkGhCcNX0uPU0VF3psv%252Bf3Ob5SH7gn%252BI7vD1ScFtLnmBa7IedK8uUREEatiH6vdUOU6Z69yiDf4U6Gf6KN7MLO9VWBF%252FFmXZgwV8C7HQyYOkFvwyqzsu8AVVphHfA3lGyf2NEoiFB5Ry%252BWvtGzElbEq%252BwZxU2XRKt4sT76UFM%252BuxOPYBCKjLBjWOYAD%252FEv9vtOmlxMngJnbo%252BDBkoWiy%252FGc%252BW15qdl6jTPKB78q7dXUaK8FIFCEhywSNp8Y73y41unVZ9sdPlPYXmuEer%252BRA4gt3Mh%252FX4gpnhoxUBwJpglqGG56Hs2WT4UflTIcVNZwaLCR39uZeB7b7VAMvg%253D%253D&crd=fhOysE0g3Bah%252BuqXA7NPQ%252F1v2zx67B6cC02j7h%252FxTJBpkp6gHY51cQZW8q07U9iIyrWciCED%252FpXGG9vjjGl3MbysPvlUCMqwogeOcyK9%252BihEWzgYy%252Bj%252B%252B%252Bo27pJ6Lg0WfhRkpLGLpSNDBxfYV9m%252FsQ%253D%253D")
+                    a(href="www.pierre-clement.info") www.pierre-clement.info
+            a(href="http://fr.linkedin.com/pub/pierre-cl%C3%A9ment/41/833/92/")
+              img(src="http://www.unitag.io/qreator/generate?crs=e2ZRfLkGhCcNX0uPU0VF3psv%252Bf3Ob5SH7gn%252BI7vD1ScFtLnmBa7IedK8uUREEatiH6vdUOU6Z69yiDf4U6Gf6KN7MLO9VWBF%252FFmXZgwV8C7HQyYOkFvwyqzsu8AVVphHfA3lGyf2NEoiFB5Ry%252BWvtGzElbEq%252BwZxU2XRKt4sT76UFM%252BuxOPYBCKjLBjWOYAD%252FEv9vtOmlxMngJnbo%252BDBkoWiy%252FGc%252BW15qdl6jTPKB78q7dXUaK8FIFCEhywSNp8Y73y41unVZ9sdPlPYXmuEer%252BRA4gt3Mh%252FX4gpnhoxUBwJpglqGG56Hs2WT4UflTIcVNZwaLCR39uZeB7b7VAMvg%253D%253D&crd=fhOysE0g3Bah%252BuqXA7NPQ%252F1v2zx67B6cC02j7h%252FxTJBpkp6gHY51cQZW8q07U9iIyrWciCED%252FpXGG9vjjGl3MbysPvlUCMqwogeOcyK9%252BihEWzgYy%252Bj%252B%252B%252Bo27pJ6Lg0WfhRkpLGLpSNDBxfYV9m%252FsQ%253D%253D")
         #content
             table
                 tr
