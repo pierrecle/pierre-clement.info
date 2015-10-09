@@ -1,2 +1,2 @@
 # pierre-clement.info
-www.pierre-clement.info website
+www.pierre-clement.info website, my online resume.
