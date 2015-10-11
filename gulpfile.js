@@ -92,6 +92,8 @@ gulp.task('generate-cv-pdf', function() {
 gulp.task('copy', function () {
     gulp.src(['src/*.png'])
         .pipe(gulp.dest('build/'));
+    gulp.src(['src/imgs/*.png'])
+        .pipe(gulp.dest('build/imgs/'));
     return gulp.src(['src/goodies/*.pdf'])
         .pipe(gulp.dest('build/goodies/'));
 });

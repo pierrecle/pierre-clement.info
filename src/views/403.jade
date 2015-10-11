@@ -1,0 +1,15 @@
+extends layout
+
+block metadata
+    title 403 - Pierre CLÉMENT
+    meta(name="description", content="Erreur 403")
+    
+block title
+    | Erreur 403
+    
+block content
+    .text-center
+        img(src="imgs/403.png", title="Cat cent trois")
+        p
+            | Vous n'êtes pas autorisé à afficher ce contenu.
+        a(href="/", title="Retour à l'index") Revenir sur ma petite personne

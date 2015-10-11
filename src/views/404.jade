@@ -1,0 +1,15 @@
+extends layout
+
+block metadata
+    title 404 - Pierre CLÉMENT
+    meta(name="description", content="Erreur 404")
+    
+block title
+    | Erreur 404
+    
+block content
+    .text-center
+        img(src="imgs/404.png", title="Cat cent quatre")
+        p
+            | La page demandée n'existe pas.
+        a(href="/", title="Retour à l'index") Revenir sur ma petite personne
