@@ -1,0 +1,9 @@
+.blurify-text(@color, @opacity: 50%) {
+  color: transparent !important;
+  text-shadow: 0 0 3px fade(@color, @opacity);
+}
+
+.blurify-box(@color, @opacity: 80%) {
+  background-color: fade(@color, @opacity);
+  box-shadow: 0 0 2px @color;
+}

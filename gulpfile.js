@@ -8,6 +8,15 @@ var ts = require('gulp-typescript');
 var connect = require('gulp-connect');
 var pdf = require('gulp-html-pdf')
 var uglifycss = require('gulp-uglifycss');
+var autoprefixer = require('gulp-autoprefixer');
+var tsd = require('gulp-tsd');
+
+gulp.task('tsd', function (callback) {
+    tsd({
+        command: 'reinstall',
+        config: './tsd.json'
+    }, callback);
+});
 
 gulp.task('connect', function() {
     connect.server({
@@ -19,6 +28,11 @@ gulp.task('connect', function() {
 gulp.task('less', function() {
     return gulp.src(['src/style/main.less'])
         .pipe(less())
+        .pipe(uglifycss())
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
         .pipe(gulp.dest('build/style/'))
         .pipe(connect.reload());
 });

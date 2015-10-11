@@ -13,18 +13,24 @@
   "homepage": "https://github.com/pierrecle/pierre-clement.info",
   "devDependencies": {
     "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.2",
     "gulp-connect": "^2.2.0",
     "gulp-data": "^1.2.0",
     "gulp-html-pdf": "^0.2.0",
     "gulp-jade": "^1.1.0",
     "gulp-less": "^3.0.3",
     "gulp-rename": "^1.2.2",
+    "gulp-tsd": "0.0.4",
     "gulp-typescript": "^2.8.2",
     "gulp-uglify": "^1.4.0",
     "gulp-uglifycss": "^1.0.4",
     "gulp-watch": "^4.3.5",
     "jade": "^1.11.0",
     "jstransformer-less": "^2.1.0",
-    "less": "^2.5.1"
+    "less": "^2.5.1",
+    "tsd": "^0.6.5"
+  },
+  "scripts": {
+    "postinstall": "gulp tsd"
   }
 }

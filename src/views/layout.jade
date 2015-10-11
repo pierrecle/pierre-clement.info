@@ -7,7 +7,7 @@ html
             meta(name="description", content="Ingénieur front-end, mon curriculum vitae, mon profil, mes compétences.")
 
         meta(http-equiv="content-type", content="text/html; charset=utf-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
+        meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0")
         link(rel="shortcut icon", type="image/png", href="favicon.png")
         link(rel="apple-touch-icon-precomposed", href="apple-touch-icon.png")
 
@@ -42,5 +42,10 @@ html
             span#toggle-sidebar
                 i.fa.fa-bars
             div
+                h1
+                    span
+                        block title
+                    span.line
                 block content
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js")
         script(src="scripts/main.js")
