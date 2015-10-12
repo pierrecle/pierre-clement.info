@@ -66,6 +66,7 @@
     #content {
         margin-left: 0;
         left: 0;
+        width: 100vw;
 
         h1 {
             font-size: 1.4em;
@@ -75,6 +76,10 @@
           position: fixed;
           overflow: hidden;
           .blurify-text(@text-color);
+
+          img {
+            filter: blur(3px);
+          }
 
           a {
             .blurify-text(@main-color-dark);
