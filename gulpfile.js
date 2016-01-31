@@ -97,7 +97,7 @@ gulp.task('copy', function () {
         .pipe(gulp.dest('build/goodies/'));
 });
 
-gulp.task('build', ['less', 'typings', 'typescript', 'templates', 'generate-cv-pdf', 'copy']);
+gulp.task('build', ['less', 'typescript', 'templates', 'generate-cv-pdf', 'copy']);
 
 gulp.task('watch', ['build'], function() {
     gulp.watch("src/scripts/**/*.ts", ['typescript']);
