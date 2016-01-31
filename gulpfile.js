@@ -9,13 +9,12 @@ var connect = require('gulp-connect');
 var pdf = require('gulp-html-pdf');
 var uglifycss = require('gulp-uglifycss');
 var autoprefixer = require('gulp-autoprefixer');
-var tsd = require('gulp-tsd');
+var typings = require('typings');
 
-gulp.task('tsd', function (callback) {
-    tsd({
-        command: 'reinstall',
-        config: './tsd.json'
-    }, callback);
+gulp.task('typings', function (done) {
+  typings.install({cwd: __dirname + '/typings/'}).then(function (){
+    done();
+  });
 });
 
 gulp.task('connect', function() {
@@ -98,7 +97,7 @@ gulp.task('copy', function () {
         .pipe(gulp.dest('build/goodies/'));
 });
 
-gulp.task('build', ['less', 'typescript', 'templates', 'generate-cv-pdf', 'copy']);
+gulp.task('build', ['less', 'typings', 'typescript', 'templates', 'generate-cv-pdf', 'copy']);
 
 gulp.task('watch', ['build'], function() {
     gulp.watch("src/scripts/**/*.ts", ['typescript']);

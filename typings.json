@@ -1,0 +1,5 @@
+{
+  "ambientDevDependencies": {
+    "fastclick": "github:DefinitelyTyped/DefinitelyTyped/fastclick/fastclick.d.ts#67d3e3547f2b3ebd4b683d78b7670e018a09ab4d"
+  }
+}
