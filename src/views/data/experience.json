@@ -13,10 +13,10 @@
       {"name": "HTML", "percent": 100},
       {"name": "Javascript", "percent": 100},
       {"name": "AngularJS", "percent": 95},
-      {"name": "PHP & frameworks", "percent": 90},
+      {"name": "Node", "percent": 85},
+      {"name": "PHP & frameworks", "percent": 80},
       {"name": "CSS/SCSS/LESS", "percent": 80},
-      {"name": "SQL", "percent": 50},
-      {"name": "Flash", "percent": 25, "details": "Uniquement sous la contrainte..."}
+      {"name": "SQL", "percent": 50}
     ],
     "culture": [
       {"name": "Admin. système", "percent": 60, "details": "Sous Linux et à titre personnel seulement."},
@@ -30,7 +30,7 @@
     ],
     "methodologies": [
       {"name": "TDD", "percent": 90},
-      {"name": "Clean Code", "percent": 80},
+      {"name": "Clean Code", "percent": 85},
       {"name": "Refactoring/Legacy", "percent": 70},
       {"name": "BDD", "percent": 60}
     ]
