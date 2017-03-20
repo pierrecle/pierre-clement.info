@@ -9,7 +9,3 @@ before_script:
 script: gulp build
 after_success:
   - bash ./deploy.sh
-env:
-  global:
-    - GH_REF: github.com/pierrecle/pierre-clement.info.git
-    - secure: "L1sS7amDDId1NZfV6+EiAWlHTHeccoB4sytftpn/rS1oGZXFR+/klDIAhoMuj6gq9G4aKeS0l98U4LnzeEEb8js1BaB91kdH4y1Lw2cdIPi+Y5meLgFESs7sJD5NSU4e22hlz1BDwZuXdHAqaIe9cOcTxswk7sY5crloi7Bokjms8XFPKjldZcHZtNmcy43nyOrEQYzeEyRPdVlkykaBQpGMim3mdsatUT8MrINxeAvC4EAz05cKSo24zIhZWNvHkY7MQg3U7qyeG54kXunuzrZQ1M09lmYI687tZybCRs6ptwmZrf20xiJOTyl/ZQ9Ak3/ZEjpy2vJ5hLr4AtCtOHQ8UHFcRHjy0YLp6PtlBw4+pXnZOax4oZibN3c/pdw2kQS9RXtLFff0C1R8uu2t+NKwdbuJ6AmCB0z6Ol6XLVpCnM8v21KlAQdRQ8qMrxk8sMKlOuyIS+NKAL5n0HGb3GRVrAEEXzaExoX58sOXSGxSyUa7QXPibqmhzdPY3asFQPYzamOVvtvPAmyiLZNdiOkghjmORHEqYX+hneQ4SFz4MsWfXI68XarP9ryPbgbrtOm1lnWYsbBQ//RH739+ans1QRTYfihQ+uOVXUwpJWffc55e4r8no9O2PkjUH/VUQ3Ak4LGLeDY+Is5EDIyGms88UwDxnE8qOzREbTtQb8A="
