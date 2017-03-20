@@ -1,6 +1,7 @@
 {
   "jobs": [
-    {"year": 2014, "title": "Développeur front-end", "company": "AXA", "type": "CDI", "dates": "Depuis juillet 2014", "location": "Marcq-en-Baroeul", "teaser": "Expertise Javascript, développement AngularJS."},
+    {"year": 2016, "title": "Techlead", "company": "Giroptic", "type": "CDI", "dates": "Depuis juillet 2016", "location": "Lille", "teaser": "Technical leader sur la partie web et devops."},
+    {"year": 2014, "title": "Développeur front-end", "company": "AXA", "type": "CDI", "dates": "De juillet 2014 à juin 2016", "location": "Marcq-en-Baroeul", "teaser": "Expertise Javascript, développement AngularJS."},
     {"year": 2013, "title": "Développeur web", "company": "Recisio", "type": "CDI", "dates": "De février 2013 à juin 2014", "location": "Lille", "teaser": "Développeur principalement PHP sur les différents sites de l'entreprise."},
     {"year": 2012, "title": "Développeur web", "company": "Merkutio", "type": "CDI", "dates": "De janvier 2012 à janvier 2013", "location": "Avignon", "teaser": "Développeur sur un framework interne, développement de jeux mobiles via Unity 3D."},
     {"year": 2010, "title": "Auto-entrepreneur", "dates": "D'avril 2010 à juin 2012", "location": "Avignon", "teaser": "Petit artisan du web."},
@@ -19,7 +20,9 @@
       {"name": "SQL", "percent": 50}
     ],
     "culture": [
-      {"name": "Admin. système", "percent": 60, "details": "Sous Linux et à titre personnel seulement."},
+      {"name": "AWS (EC2, S3, EB, ET..)", "percent": 80},
+      {"name": "Jenkins", "percent": 60},
+      {"name": "Admin. système", "percent": 60},
       {"name": "Prog. système (Bash/Perl)", "percent": 65},
       {"name": "Java", "percent": 60},
       {"name": "Java EE", "percent": 15},

@@ -1,0 +1,29 @@
+span Technical leader partie web
+
+h3 Backend
+ul
+    li réécriture du site de partage de médias en MVC (PHP)
+    li réécriture du SSO et ajout de la partie OAuth (PHP)
+    li développement d'un framework interne (PHP, utilisant Slim et Twig)
+    li développement d'une API permettant de gérer les médias (Node, codée en Typescript et basée sur ExpressJs)
+    li développement d'une API pour le backoffice (PHP)
+
+br
+h3 Frontend
+ul
+    li implémentation de la première version de la charte graphique (SCSS/Typescript)
+    li développement du backoffice (AngularJS/Typescript)
+    li réécriture d'une partie des Javascripts sur le site de partage de médias en vue d'intégrer plus simplement AngularJS pour la partie upload notamment
+
+br
+h3 DevOps
+ul
+    li changement du serveur d'encodage par une solution Elastic Transcoder
+    li installation de Jenkins et des scripts permettant la build et l'intégration continue des projets web
+    li la charte graphique est un paquet bower
+    li le framework PHP est un paquet composer
+    li migration vers les services AWS (Elastic Beanstalk, DynamoDB etc.)
+    li écriture des scripts node/composer pour la build et l'installation
+
+br
+p Côté DevOps, le travail dont je suis le plus fier est l'intégration continue : juste avant mon arrivée, les sites web ont été migrés sur une instance EC2, et pour livrer les applications il fallait déposer les fichiers en FTP. Depuis, tous les sites, sauf celui de e-commerce, sont gérés par Elastic Beanstalk. Pour les livraisons, un webhook Git appelle Jenkins à chaque push sur les branches définies. Jenkins exécute les scripts que j'ai développés, qui exécutent les tests unitaires, fait la build, créé un tag Git pour figer la version de l'application si besoin, et la livre automatiquement sur Elastic Beanstalk avec le bon numéro de version. Donc en gros, pour livrer, il suffit de pousser sur la branche correspondante à l'environnement souhaité.

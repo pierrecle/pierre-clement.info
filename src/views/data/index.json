@@ -3,7 +3,7 @@
     {"label": "Je suis", "value": "Pierre CLÉMENT", "icon": "user"},
     {"label": "Né le", "value": "1er juin 1987", "icon": "calendar"},
     {"label": "J'habite à", "value": "Marcq-en-Baroeul", "icon": "location-arrow"},
-    {"label": "Et je suis", "value": "Marié", "icon": "gavel"}
+    {"label": "Et je suis", "value": "Marié et papa", "icon": "gavel"}
   ],
   "langues": [
     {"name": "Anglais", "level": "Bon niveau"},

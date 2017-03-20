@@ -12,23 +12,26 @@ block content
         ul.timeline
             - var job = jobs[0]
             +timelineElement(job.year, job.title, job.company, job.type, job.dates, job.location)
-                include partials/2014-axa
-            - job = jobs[1]
+                include partials/2016-giroptic
+            - var job = jobs[1]
             +timelineElement(job.year, job.title, job.company, job.type, job.dates, job.location)
-                include partials/2013-recisio
+                include partials/2014-axa
             - job = jobs[2]
             +timelineElement(job.year, job.title, job.company, job.type, job.dates, job.location)
-                include partials/2012-merkutio
+                include partials/2013-recisio
             - job = jobs[3]
             +timelineElement(job.year, job.title, job.company, job.type, job.dates, job.location)
-                include partials/2010-autoentrepreneur
+                include partials/2012-merkutio
             - job = jobs[4]
             +timelineElement(job.year, job.title, job.company, job.type, job.dates, job.location)
-                include partials/2009-doctorat
+                include partials/2010-autoentrepreneur
             - job = jobs[5]
             +timelineElement(job.year, job.title, job.company, job.type, job.dates, job.location)
-                include partials/2009-stage
+                include partials/2009-doctorat
             - job = jobs[6]
+            +timelineElement(job.year, job.title, job.company, job.type, job.dates, job.location)
+                include partials/2009-stage
+            - job = jobs[7]
             +timelineElement(job.year, job.title, job.company, job.type, job.dates, job.location)
                 include partials/2006-stage
         p
