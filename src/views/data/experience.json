@@ -1,6 +1,6 @@
 {
   "jobs": [
-    {"year": 2016, "title": "Techlead", "company": "Giroptic", "type": "CDI", "dates": "Depuis juillet 2016", "location": "Lille", "teaser": "Technical leader sur la partie web et devops."},
+    {"year": 2016, "title": "Senior Web Developer", "company": "Giroptic", "type": "CDI", "dates": "Depuis juillet 2016", "location": "Lille", "teaser": "Technical leader sur la partie web et devops."},
     {"year": 2014, "title": "Développeur front-end", "company": "AXA", "type": "CDI", "dates": "De juillet 2014 à juin 2016", "location": "Marcq-en-Baroeul", "teaser": "Expertise Javascript, développement AngularJS."},
     {"year": 2013, "title": "Développeur web", "company": "Recisio", "type": "CDI", "dates": "De février 2013 à juin 2014", "location": "Lille", "teaser": "Développeur principalement PHP sur les différents sites de l'entreprise."},
     {"year": 2012, "title": "Développeur web", "company": "Merkutio", "type": "CDI", "dates": "De janvier 2012 à janvier 2013", "location": "Avignon", "teaser": "Développeur sur un framework interne, développement de jeux mobiles via Unity 3D."},
