@@ -12,22 +12,22 @@
   "skills": {
     "web": [
       {"name": "HTML", "percent": 100},
-      {"name": "Javascript", "percent": 100},
+      {"name": "Javascript/Typescript", "percent": 100},
       {"name": "AngularJS", "percent": 95},
-      {"name": "Node", "percent": 85},
-      {"name": "PHP & frameworks", "percent": 80},
+      {"name": "Node", "percent": 90},
+      {"name": "PHP & frameworks", "percent": 95},
       {"name": "CSS/SCSS/LESS", "percent": 80},
-      {"name": "SQL", "percent": 50}
+      {"name": "SQL", "percent": 70}
     ],
     "culture": [
       {"name": "AWS (EC2, S3, EB, ET..)", "percent": 80},
       {"name": "Jenkins", "percent": 60},
-      {"name": "Admin. système", "percent": 60},
-      {"name": "Prog. système (Bash/Perl)", "percent": 65},
+      {"name": "Admin. système", "percent": 70},
+      {"name": "Prog. système (Bash/Perl)", "percent": 70},
       {"name": "Java", "percent": 60},
       {"name": "Java EE", "percent": 15},
       {"name": "C/C++", "percent": 60},
-      {"name": "Python", "percent": 25},
+      {"name": "Python", "percent": 15},
       {"name": "Android", "percent": 15},
       {"name": "iOS", "percent": 10}
     ],
