@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Expérience et compétences - Pierre CLÉMENT</title>
+    <meta name="description" content="Mon expérience professionnelle et mes compétences.">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="style/main.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div id="sidebar">
+      <header id="me"><img src="http://www.gravatar.com/avatar/db37391857a3ea44064d651c0377faa7.jpg?size=200" alt="Pierre CLÉMENT"><span>Pierre CLÉMENT</span><span>Senior Web Developer</span></header>
+      <nav>
+        <ul>
+          <li><a href="./">Profil&nbsp;<i class="fa fa-user"></i></a><span class="arrow"></span></li>
+          <li class="current"><a href="./experience.html">Expérience&nbsp;<i class="fa fa-suitcase"></i></a><span class="arrow"></span></li>
+          <li><a href="./formation.html">Formation&nbsp;<i class="fa fa-graduation-cap"></i></a><span class="arrow"></span></li>
+          <li><a href="goodies/Pierre-CLEMENT-CV.pdf">Télécharger&nbsp;<i class="fa fa-file-pdf-o"></i></a><span class="arrow"></span></li>
+        </ul>
+      </nav>
+      <div id="socials"><a href="https://www.linkedin.com/in/pierre-clément-09283341/" title="Mon profil sur LinkedIn"><i class="fa fa-linkedin"></i></a><a href="https://github.com/pierrecle" title="Ma page Github"><i class="fa fa-github"></i></a></div>
+      <footer>2009-2017 &copy P .CLÉMENT
+      </footer>
+    </div>
+    <div id="content" class="container-fluid"><span id="toggle-sidebar"><i class="fa fa-bars"></i></span>
+      <div>
+        <h1><span>Mon expérience et mes compétences</span><span class="line"></span></h1>
+        <div class="col-sm-8">
+          <ul class="timeline">
+            <li>
+              <div class="timeline-badge">2016</div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h2 class="unselectable-text"><span>Senior Web Developer&nbsp;<span class="text-muted"><i class="fa fa-chevron-circle-down"></i><i class="fa fa-chevron-circle-up hidden"></i></span></span></h2>
+                  <h3><span class="subtext">Giroptic</span><span>&nbsp;•&nbsp;</span><span class="text-muted">CDI</span>
+                  </h3>
+                  <p><small class="text-muted"><i class="fa fa-clock-o"></i>&nbsp;Depuis juillet 2016&nbsp;</small><small class="text-muted"><i class="fa fa-location-arrow"></i>&nbsp;Lille</small>
+                  </p>
+                </div>
+                <div class="timeline-body hidden"><span>Technical leader partie web</span>
+                  <h3>Backend</h3>
+                  <ul>
+                    <li>réécriture du site de partage de médias en MVC (PHP)</li>
+                    <li>réécriture du SSO et ajout de la partie OAuth (PHP)</li>
+                    <li>développement d'un framework interne (PHP, utilisant Slim et Twig)</li>
+                    <li>développement d'une API permettant de gérer les médias (Node, codée en Typescript et basée sur ExpressJs)</li>
+                    <li>développement d'une API pour le backoffice (PHP)</li>
+                  </ul><br>
+                  <h3>Frontend</h3>
+                  <ul>
+                    <li>implémentation de la première version de la charte graphique (SCSS/Typescript)</li>
+                    <li>développement du backoffice (AngularJS/Typescript)</li>
+                    <li>réécriture d'une partie des Javascripts sur le site de partage de médias en vue d'intégrer plus simplement AngularJS pour la partie upload notamment</li>
+                  </ul><br>
+                  <h3>DevOps</h3>
+                  <ul>
+                    <li>changement du serveur d'encodage par une solution Elastic Transcoder</li>
+                    <li>installation de Jenkins et des scripts permettant la build et l'intégration continue des projets web</li>
+                    <li>la charte graphique est un paquet bower</li>
+                    <li>le framework PHP est un paquet composer</li>
+                    <li>migration vers les services AWS (Elastic Beanstalk, DynamoDB etc.)</li>
+                    <li>écriture des scripts node/composer pour la build et l'installation</li>
+                  </ul><br>
+                  <p>Côté DevOps, le travail dont je suis le plus fier est l'intégration continue : juste avant mon arrivée, les sites web ont été migrés sur une instance EC2, et pour livrer les applications il fallait déposer les fichiers en FTP. Depuis, tous les sites, sauf celui de e-commerce, sont gérés par Elastic Beanstalk. Pour les livraisons, un webhook Git appelle Jenkins à chaque push sur les branches définies. Jenkins exécute les scripts que j'ai développés, qui exécutent les tests unitaires, fait la build, créé un tag Git pour figer la version de l'application si besoin, et la livre automatiquement sur Elastic Beanstalk avec le bon numéro de version. Donc en gros, pour livrer, il suffit de pousser sur la branche correspondante à l'environnement souhaité.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-badge">2014</div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h2 class="unselectable-text"><span>Développeur front-end&nbsp;<span class="text-muted"><i class="fa fa-chevron-circle-down"></i><i class="fa fa-chevron-circle-up hidden"></i></span></span></h2>
+                  <h3><span class="subtext">AXA</span><span>&nbsp;•&nbsp;</span><span class="text-muted">CDI</span>
+                  </h3>
+                  <p><small class="text-muted"><i class="fa fa-clock-o"></i>&nbsp;De juillet 2014 à juin 2016&nbsp;</small><small class="text-muted"><i class="fa fa-location-arrow"></i>&nbsp;Marcq-en-Baroeul</small>
+                  </p>
+                </div>
+                <div class="timeline-body hidden"><span>Développeur sur différents sites et applications d'AXA.</span>
+                  <p>
+                     
+                    Essentiellement développeur Javascript sur des sites et applications intranet/extranet/internet d'AXA.
+                    Je travaille également en relation avec l'équipe ergo/design pour prendre le relais niveau intégration et design, et être l'interlocuteur privilégié de l'équipe de dev sur ces points.
+                    Plus généralement, mon expertise technique et mon travail de veille me permettent d'être force de proposition sur mon domaine, afin de tirer le meilleur profit de nos développements et technologies.
+                    J'essaie d'ailleurs de partager un maximum autour du front avec les autres développeurs par le biais de présentations que j'essaie de tenir régulièrement.
+                    Enfin, j'accorde une grande importance à la diffusion des compétences, afin de permettre à mes collègues de monter en compétences et gagner en autonomie sur mes domaines de compétences. Je prends le temps nécessaire pour expliquer les notions et points techniques à tout collègue le demandant. Je n'hésite pas non plus à faire des présentations et ateliers techniques en comité plus restreint sur des points très précis si nécessaire.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-badge">2013</div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h2 class="unselectable-text"><span>Développeur web&nbsp;<span class="text-muted"><i class="fa fa-chevron-circle-down"></i><i class="fa fa-chevron-circle-up hidden"></i></span></span></h2>
+                  <h3><span class="subtext">Recisio</span><span>&nbsp;•&nbsp;</span><span class="text-muted">CDI</span>
+                  </h3>
+                  <p><small class="text-muted"><i class="fa fa-clock-o"></i>&nbsp;De février 2013 à juin 2014&nbsp;</small><small class="text-muted"><i class="fa fa-location-arrow"></i>&nbsp;Lille</small>
+                  </p>
+                </div>
+                <div class="timeline-body hidden"><span>Développeur sur les différents sites de l'entreprise.</span>
+                  <ul>
+                    <li>Dev du système de génération de rapport pour certaines sociétés de collection de droits</li>
+                    <li>Dev de l'outil de génération des pistes personnalisées en HTML 5</li>
+                    <li>Dev du système d'habillage automatique des karaokés</li>
+                    <li>Dev d'un système d'envoi/gestion des mixes d'essai des producteurs</li>
+                    <li>Dev d'un tableau de bord pour les producteurs avec des informations qualitatives sur leurs productions</li>
+                    <li>Dev du système de recrutement d'ingénieur du son</li>
+                    <li>Portage en MVC du site pour les affiliés</li>
+                    <li>Dev de l'API REST pour les affiliés</li>
+                    <li>Maintien des players Flash de karaoké et de l'outil de génération de pistes personnalisées</li>
+                    <li>Refactoring pour migrer le code historique de l'entreprise vers le framework mis en place, dev. sur les front et back office</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-badge">2012</div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h2 class="unselectable-text"><span>Développeur web&nbsp;<span class="text-muted"><i class="fa fa-chevron-circle-down"></i><i class="fa fa-chevron-circle-up hidden"></i></span></span></h2>
+                  <h3><span class="subtext">Merkutio</span><span>&nbsp;•&nbsp;</span><span class="text-muted">CDI</span>
+                  </h3>
+                  <p><small class="text-muted"><i class="fa fa-clock-o"></i>&nbsp;De janvier 2012 à janvier 2013&nbsp;</small><small class="text-muted"><i class="fa fa-location-arrow"></i>&nbsp;Avignon</small>
+                  </p>
+                </div>
+                <div class="timeline-body hidden"><span>Core développeur sur un CMS multisite.</span>
+                  <ul>
+                    <li>Développement de 2 jeux pour smartphones iOS et Android pour Dell et Intel</li>
+                    <li>Modélisation, conception et développement d’une plateforme de génération et d’administration de sites internet</li>
+                    <li>Responsabilité d’un projet impliquant la plateforme et des services web</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-badge">2010</div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h2 class="unselectable-text"><span>Auto-entrepreneur&nbsp;<span class="text-muted"><i class="fa fa-chevron-circle-down"></i><i class="fa fa-chevron-circle-up hidden"></i></span></span></h2>
+                </div>
+                <div class="timeline-body hidden"><span>Petit artisan du web.</span>
+                  <ul>
+                    <li>Programmation d’un framework PHP complet</li>
+                    <li>Développement de sites internet</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-badge">2009</div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h2 class="unselectable-text"><span>Doctorant en informatique&nbsp;<span class="text-muted"><i class="fa fa-chevron-circle-down"></i><i class="fa fa-chevron-circle-up hidden"></i></span></span></h2>
+                  <h3><span class="subtext">CERI/LIA</span><span>&nbsp;•&nbsp;</span><span class="text-muted">Bourse ministérielle</span>
+                  </h3>
+                  <p><small class="text-muted"><i class="fa fa-clock-o"></i>&nbsp;D'octobre 2009 à décembre 2011&nbsp;</small><small class="text-muted"><i class="fa fa-location-arrow"></i>&nbsp;Avignon</small>
+                  </p>
+                </div>
+                <div class="timeline-body hidden">
+                  <p>Thèse non soutenue<br><b>Sujet :</b>&nbsp;segmentation en locuteurs des fichiers vidéos hétérogènes issus du web.</p>
+                  <p>Le but de ma thèse était d'analyser des fichiers vidéos de tout type pris sur internet afin d'en déduire qui parle quand, sans identifier les locuteurs.</p><b>Publication :</b>&nbsp;<a target="_self" href="goodies/icassp2011.pdf" title="Téléchargez l'article complet en anglais">Speaker diarization of heterogeneous web video files: A preliminary study [en] - ICASSP 2011 - Prague</a><br><b>Enseignement à l’Université d’Avignon :</b>
+                  <ul>
+                    <li>Initiation à la programmation - L1</li>
+                    <li>Base de données et interfaces web - L3</li>
+                    <li>Remise à niveau web - M1</li>
+                    <li>Programmation Objet Java - M1</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-badge">2009</div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h2 class="unselectable-text"><span>Stagiaire en ingénierie de recherche&nbsp;<span class="text-muted"><i class="fa fa-chevron-circle-down"></i><i class="fa fa-chevron-circle-up hidden"></i></span></span></h2>
+                  <h3><span class="subtext">CERI/LIA</span>
+                  </h3>
+                  <p><small class="text-muted"><i class="fa fa-clock-o"></i>&nbsp;De janvier à août 2009&nbsp;</small><small class="text-muted"><i class="fa fa-location-arrow"></i>&nbsp;Avignon</small>
+                  </p>
+                </div>
+                <div class="timeline-body hidden"><span>Mise en place d’un système de cartographie afin d'aider les cliniciens à suivre l'évolution de certaines pathologies rares.</span>
+                  <p><b>Publications :&nbsp;</b><a target="_self" href="goodies/RJCP2009-282.pdf" title="Téléchargez l'article complet">Méthodes objectives issues du traitement automatique de la parole pour la recherche de zones “déviantes” dans la parole dysarthrique - RJCP 2009 - Avignon</a></p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-badge">2006</div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h2 class="unselectable-text"><span>Stagiaire en développement web&nbsp;<span class="text-muted"><i class="fa fa-chevron-circle-down"></i><i class="fa fa-chevron-circle-up hidden"></i></span></span></h2>
+                  <h3><span class="subtext">INRIA</span>
+                  </h3>
+                  <p><small class="text-muted"><i class="fa fa-clock-o"></i>&nbsp;D'avril à juin 2006&nbsp;</small><small class="text-muted"><i class="fa fa-location-arrow"></i>&nbsp;Nancy</small>
+                  </p>
+                </div>
+                <div class="timeline-body hidden"><span>Développement d'un site intranet afin de gérer les documents du système d'information de l'INRIA.</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <p><br>Sans oublier mes petits jobs d'été. J'ai en effet "profité" de mon temps libre pour découvrir le métier de carreleur
+            pendant deux étés et vendeur dans le tabac/presse familial pendant trois étés.
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <h2><i class="fa fa-code"></i>&nbsp;Web</h2>
+          <div class="skills">
+            <div>
+              <div class="skill"><span style="width:100%">HTML</span>HTML</div>
+            </div>
+            <div>
+              <div class="skill"><span style="width:100%">Javascript/Typescript</span>Javascript/Typescript</div>
+            </div>
+            <div>
+              <div class="skill"><span style="width:95%">AngularJS</span>AngularJS</div>
+            </div>
+            <div>
+              <div class="skill"><span style="width:90%">Node</span>Node</div>
+            </div>
+            <div>
+              <div class="skill"><span style="width:100%">PHP &amp; frameworks</span>PHP &amp; frameworks</div>
+            </div>
+            <div>
+              <div class="skill"><span style="width:80%">CSS/SCSS/LESS</span>CSS/SCSS/LESS</div>
+            </div>
+            <div>
+              <div class="skill"><span style="width:70%">SQL</span>SQL</div>
+            </div>
+          </div>
+          <h2><i class="fa fa-desktop"></i>&nbsp;Culture dev'</h2>
+          <p>Je me suis également intéressé et m'intéresse encore à d'autres technologies parfois éloignées du web</p>
+          <div class="skills">
+            <div>
+              <div class="skill"><span style="width:80%">AWS (EC2, S3, EB, ET..)</span>AWS (EC2, S3, EB, ET..)</div>
+            </div>
+            <div>
+              <div class="skill"><span style="width:70%">Jenkins</span>Jenkins</div>
+            </div>
+            <div>
+              <div class="skill"><span style="width:70%">Admin. système</span>Admin. système</div>
+            </div>
+            <div>
+              <div class="skill"><span style="width:70%">Prog. système (Bash/Perl)</span>Prog. système (Bash/Perl)</div>
+            </div>
+            <div>
+              <div class="skill"><span style="width:50%">Java</span>Java</div>
+            </div>
+            <div>
+              <div class="skill"><span style="width:15%">Java EE</span>Java EE</div>
+            </div>
+            <div>
+              <div class="skill"><span style="width:60%">C/C++</span>C/C++</div>
+            </div>
+            <div>
+              <div class="skill"><span style="width:10%">Python</span>Python</div>
+            </div>
+            <div>
+              <div class="skill"><span style="width:15%">Android</span>Android</div>
+            </div>
+            <div>
+              <div class="skill"><span style="width:10%">iOS</span>iOS</div>
+            </div>
+          </div>
+          <h2><i class="fa fa-cogs"></i>&nbsp;Méthodologies</h2>
+          <div class="skills">
+            <div>
+              <div class="skill"><span style="width:90%">TDD</span>TDD</div>
+            </div>
+            <div>
+              <div class="skill"><span style="width:85%">Clean Code</span>Clean Code</div>
+            </div>
+            <div>
+              <div class="skill"><span style="width:70%">Refactoring/Legacy</span>Refactoring/Legacy</div>
+            </div>
+            <div>
+              <div class="skill"><span style="width:60%">BDD</span>BDD</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      
+      ga('create', 'UA-53161068-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
